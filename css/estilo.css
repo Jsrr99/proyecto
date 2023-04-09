@@ -5,20 +5,54 @@ body{
 	background-color: #E4E4E4 !important;
 }
 
-.container{
+.container-1{
 	background-color: white !important;
 	border-radius: 7px;
+	display:flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	margin-left: 7%;
+	margin-right: 7%;
+}
+.col-md-12{
+	width: 100vh !important;
+	align-self: center;
 }
 
 a:link, a:visited, a:active {
     text-decoration:none;
 }
 .col-md-4{
-	align-self: center !important;
+	background-size: cover !important;
+	width: 100vh !important;
+	align-self: center;
+	margin-left: 15%;
 }
-.card{
-	background-color: olive !important;
+.col-md-4 img{
+	margin-left: -15%;
+}
+.navbar.navbar-expand-lg.bg-body-tertiary{
+	background-color: white !important;
+}
+.logo{
+	width: 8%;
+	height: 8%;
 }
 .row.g-0{
 	background-color: white !important;
+	border-radius: 7px;
+	box-shadow: -12px 12px 5px 0px rgba(0,0,0,0.09);
+	-webkit-box-shadow: -12px 12px 5px 0px rgba(0,0,0,0.09);
+	-moz-box-shadow: -12px 12px 5px 0px rgba(0,0,0,0.09);
+}
+.col-md-4{
+	position: relative;
+	width: 100%;
+	height: 100%;
+	background-size: cover;
+}
+.img-fluid.rounded-start{
+	width: 100%;
+	height: 100% !important;
 }
