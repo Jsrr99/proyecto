@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <link href="css/estilo.css" rel="stylesheet" type="text/css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid"> <img src="img/logo.png" class="logo"><a class="navbar-brand" href="#">TT Finder</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"> <span
+          class="navbar-toggler-icon"></span> </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item"> <a class="nav-link active" aria-current="page" href="index.html">Inicio</a> </li>
+        <li class="nav-item"> <a class="nav-link" href="pagina_2.php">Pagina 2</a> </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <br>
+  <div class="container-1">
+    <br>
+    <div class="row">
+      <div class="col-md-12">
+        <h3>Crear registro</h3>
+        <form action="formu.php" method="post">
+          <div class="col-md-12">
+            <label for="exampleInputEmail1" class="form-label">Nombre completo</label>
+            <input type="text" class="form-control" placeholder="Tu nombre" name="nombre" required>
+          </div>
+          <br>
+          <div class="col-md-12">
+            <label for="exampleInputEmail1" class="form-label">Contraseña</label>
+            <input type="password" class="form-control" placeholder="Tu contraseña" name="password"
+              required>
+            </div>
+            <br>
+          <div class="col-md-12">
+            <label for="exampleInputEmail1" class="form-label">Genero</label>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="genero" id="femenino" value="femenino">
+              <label class="form-check-label" for="flexRadioDefault1">
+                Femenino
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="genero" id="masculino" value="masculino">
+              <label class="masculino" for="masculino">
+                Masculino
+              </label>
+            </div>
+          </div>
+          <br>
+          <div class="col-md-12">
+            <label for="exampleInputEmail1" class="form-label">Correo Electronico</label>
+            <input type="text" class="form-control" placeholder="Tu correo" name="email" required>
+          </div>
+          <br>
+          <div class="col-md-12">
+            <label for="exampleInputEmail1" class="form-label">Orientacion</label>
+            <select class="form-select" name="orientacion" aria-label="Default select example">
+              <option selected>seleccione... </option>
+              <option value="abogado">Abogado</option>
+              <option value="administrativo-secretaria">Administrativo - Secretaria</option>
+              <option value="animador-actor-artista">Animador - Actor - Artista</option>
+              <option value="call center-aencion al clientes">Call center - Atención al Cliente</option>
+              <option value="comercial-vendedor">Comercial - Vendedor</option>
+              <option value="contruccion-obrero">Construcción - Obrero</option>
+              <option value="contador-finanzas">Contador - Finanzas</option>
+              <option value="informatica-programador">Informática - Programador</option>
+              <option value="ingeniero-arquitecto">Ingeniero - Arquitecto</option>
+              <option value="inernet-multimedia">Internet - Multimedia</option>
+              <option value="maestro-profesor">Maestro - Profesor</option>
+              <option value="marketing-mercadeo">Marketing- Mercadeo</option>
+              <option value="medicina-salud">Medicina - Salud</option>
+              <option value="produccion-operario">Producción- Operario</option>
+              <option value="publicidad-relaciones publicas">Publicidad - Relaciones Públicas</option>
+              <option value="recursos humanos">Recursos Humanos</option>
+              <option value="restauranes-chef">Restaurantes - Chef - Mesero</option>
+              <option value="turismo-paquetes turisticos">Turismo - Paquetes Turísticos</option>
+              <option value="voluntario">Voluntario</option>
+            </select>
+            <br>
+            <div class="col-md-12">
+              <label for="exampleInputEmail1" class="form-label">Telefono</label>
+              <input type="text" class="form-control" placeholder="Tu numero" name="numero"
+                required></div>
+            <br>
+            <div><button type="submit" class="btn btn-primary">Enviar</button></div>
+            <br><br>
+        </form>
+      </div>
+    </div>
+    <br>
+  </div>
+</div>  
+
+  <footer class="bd-footer py-4 py-md-5 mt-5 bg-body-tertiary">
+    <div class="container py-4 py-md-5 px-4 px-md-3 text-body-secondary">
+      <div class="row">
+        <div class="col-lg-4 mb-3">
+          <h5>Redes Sociales</h5>
+          <ul class="list-unstyled">
+            <li class="mb-2"><a href="#">Facebook</a></li>
+            <li class="mb-2"><a href="#">Twitter</a></li>
+            <li class="mb-2"><a href="#">Instagram</a></li>
+            <li class="mb-2"><a href="#">Snapchat</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-4 mb-3">
+          <h5>Enlaces rapidos</h5>
+          <ul class="list-unstyled">
+            <li class="mb-2"><a href="index.html">Inicio</a></li>
+            <li class="mb-2"><a href="#">Pagina 2</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-4 mb-3">
+          <h5>Enlaces de interés</h5>
+          <ul class="list-unstyled">
+            <li class="mb-2"><a href="#">Enlace de interés 1</a></li>
+            <li class="mb-2"><a href="#">Enlace de interés 2</a></li>
+            <li class="mb-2"><a href="#">Enlace de interés 3</a></li>
+            <li class="mb-2"><a href="#">Enlace de interés 4</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!--Bootstrap js-->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
