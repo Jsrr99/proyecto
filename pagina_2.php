@@ -14,8 +14,8 @@
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span> </button>
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item"> <a class="nav-link active" aria-current="page" href="index.html">Inicio</a> </li>
-              <li class="nav-item"> <a class="nav-link" href="index.html">Index</a> </li>
+            <li class="nav-item"> <a class="nav-link active" aria-current="page" href="index.html">Inicio</a> </li>
+        <li class="nav-item"> <a class="nav-link" href="pagina_2.php">Pagina 2</a> </li>
             </ul>
           </div>
         </div>
@@ -28,12 +28,13 @@
     </div>
   </div>
   <br>
+  <div class="container">
   <div class="row">
-    <div class="col-md-12">
-        <div class="col-md-4">
-            <div class="card mb-3" style="max-width: 540px;">
+    <div class="col-md-6">
+          <a href="formulario.html" target="_blank">
+            <div class="card mb-3">
               <div class="row g-0">
-                <div class="col-md-4"> <img src="img/img4.png" class="img-fluid rounded-start" alt="..."> </div>
+                <div class="col-md-4"> <img src="img/img4.png" class="img-fluid rounded-start" alt="..." style="max-height: 311px;"> </div>
                 <div class="col-md-8">
                   <div class="card-body">
                     <h5 class="card-title">Formulario seleccion</h5>
@@ -43,16 +44,12 @@
                 </div>
               </div>
             </div>
-          </div>
+          </a>
     </div>
-   </div>
-   <br>
-   <div class="row">
-    <div class="col-md-12">
-        <div class="col-md-4">
-            <div class="card mb-3" style="max-width: 540px;">
+    <div class="col-md-6">
+            <div class="card mb-3">
               <div class="row g-0">
-                <div class="col-md-4"> <img src="img/img5.png" class="img-fluid rounded-start" alt="..."> </div>
+                <div class="col-md-4"> <img src="img/img5.png" class="img-fluid rounded-start" alt="..." style="max-height: 311px;"> </div>
                 <div class="col-md-8">
                   <div class="card-body">
                     <h5 class="card-title"> 10 mejores Sofware de seleccion</h5>
@@ -62,16 +59,11 @@
                 </div>
               </div>
             </div>
-          </div>
     </div>
-   </div>
-   <br>
-   <div class="row">
-    <div class="col-md-12">
-        <div class="col-md-4">
+    <div class="col-md-6">
             <div class="card mb-3" style="max-width: 540px;">
               <div class="row g-0">
-                <div class="col-md-4"> <img src="img/img6.jpg" class="img-fluid rounded-start" alt="..."> </div>
+                <div class="col-md-4"> <img src="img/img6.jpg" class="img-fluid rounded-start" alt="..." style="max-height: 311px;"> </div>
                 <div class="col-md-8">
                   <div class="card-body">
                     <h5 class="card-title">Ofertas de empleo</h5>
@@ -87,11 +79,83 @@
                 </div>
               </div>
             </div>
-          </div>
     </div>
-    <br>
+    <div class="col-md-6">
+      <div class="card mb-3" style="max-width: 540px;">
+        <div class="row g-0">
+          <div class="col-md-4"> <img src="img/img6.jpg" class="img-fluid rounded-start" alt="..." style="max-height: 311px;"> </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              <h5 class="card-title">Ofertas de empleo</h5>
+              <p class="card-text">En este apartado encontraras las mejores páginas de referencia para encontrar ofertas laborales.
+                <ul class="vinetas"> 
+                  <li><a href="">El empleo</a></li>
+                  <li><a href="">Computrbajo</a></li>
+                  <li><a href="">LinkedIn</a></li> 
+              </ul>
+              </p>
+              <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+            </div>
+          </div>
+        </div>
+      </div>
+</div>
    </div>
-   <br>
+   <div class="row">
+    <div class="card">
+      <div class="card-body">
+    <table class="table">
+  <thead>
+    <tr>
+      <th scope="col">Nombre</th>
+      <th scope="col">Genero</th>
+      <th scope="col">Orientacion</th>
+      <th scope="col">Telefono</th>
+      <th scope="col">Acciones</th>
+    </tr>
+  </thead>
+  <tbody>
+    <?php 
+    $servername = "localhost";
+    $username = "root";
+    $password = "";
+    $dbname = "datos";
+    
+    // Create connection
+    $conn = mysqli_connect($servername, $username, $password, $dbname);
+    
+    // Check connection
+    if (!$conn) {
+      die("Connection failed: " . mysqli_connect_error());
+    }
+
+    
+    $sql = "SELECT * FROM `informacion`;";
+    
+    $result = mysqli_query($conn, $sql);
+
+    while($row = mysqli_fetch_assoc($result)){
+
+    
+    
+    ?>
+    <tr>
+      <td><?php echo $row["nombre"]; ?></td>
+      <td><?php echo $row["genero"]; ?></td>
+      <td><?php echo $row["orienacion"]; ?></td>
+      <td><?php echo $row["telefono"]; ?></td>
+      <td><form action="editarregistro.php" method="get"><input type="hidden" name="editar" value="<?php echo $row["id"]; ?>"><button type="submit" class="btn btn-warning">Editar</button> </form><form action="eliminar.php" method="get"><input type="hidden" name="eliminar" value="<?php echo $row["id"]; ?>"><button type="submit" class="btn btn-danger">Eliminar</button> </form></td>
+    </tr>
+
+    <?php 
+    }
+    ?>
+  </tbody>
+</table>
+</div>
+</div>
+   </div>
+  </div>
 </div>
 
 
