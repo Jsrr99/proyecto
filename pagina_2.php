@@ -69,9 +69,9 @@
                     <h5 class="card-title">Ofertas de empleo</h5>
                     <p class="card-text">En este apartado encontraras las mejores páginas de referencia para encontrar ofertas laborales.
                       <ul class="vinetas"> 
-                        <li><a href="">El empleo</a></li>
-                        <li><a href="">Computrbajo</a></li>
-                        <li><a href="">LinkedIn</a></li> 
+                        <li><a href="https://www.elempleo.com/co/ofertas-empleo?gclid=CjwKCAjw__ihBhADEiwAXEazJhUcTcZefkvTyeOCN-Ipzb7SO1pDRGdDjLb5s10hYm8K_B_GTFLmhRoCtVsQAvD_BwE">El empleo</a></li>
+                        <li><a href="https://co.computrabajo.com/">Computrbajo</a></li>
+                        <li><a href="https://co.linkedin.com/">LinkedIn</a></li> 
                     </ul>
                     </p>
                     <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
@@ -83,15 +83,13 @@
     <div class="col-md-6">
       <div class="card mb-3" style="max-width: 540px;">
         <div class="row g-0">
-          <div class="col-md-4"> <img src="img/img6.jpg" class="img-fluid rounded-start" alt="..." style="max-height: 311px;"> </div>
+          <div class="col-md-4"> <img src="img/img7.png" class="img-fluid rounded-start" alt="..." style="max-height: 311px;"> </div>
           <div class="col-md-8">
             <div class="card-body">
-              <h5 class="card-title">Ofertas de empleo</h5>
-              <p class="card-text">En este apartado encontraras las mejores páginas de referencia para encontrar ofertas laborales.
+              <h5 class="card-title">Algunos tips...</h5>
+              <p class="card-text">Podrias ver algunas sugerencias sobre lo que debes tener en cuenta cuando apliques al proceso de reclutamiento.
                 <ul class="vinetas"> 
-                  <li><a href="">El empleo</a></li>
-                  <li><a href="">Computrbajo</a></li>
-                  <li><a href="">LinkedIn</a></li> 
+                  <li><a href="https://hotmart.com/es/blog/encontrar-trabajo">Clic aqui</a></li>
               </ul>
               </p>
               <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
