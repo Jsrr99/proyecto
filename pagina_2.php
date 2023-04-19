@@ -3,19 +3,20 @@
 <head>
     <link href="css/estilo.css" rel="stylesheet" type="text/css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
-    <meta charset="UTF-8">
+    <meta charset="Utf-8">
+    <link href="css/estilo.css" rel="stylesheet" type="text/css">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Base de datos</title>
 </head>
 <body>
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
-        <div class="container-fluid"> <img src="img/logo.png" class="logo"><a class="navbar-brand" href="#">TT Finder</a>
+        <div class="container-fluid"> <img src="img/logo.png" class="logo"><a class="navbar-brand" href="#">Top Talent Finder</a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span> </button>
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item"> <a class="nav-link active" aria-current="page" href="index.html">Inicio</a> </li>
-        <li class="nav-item"> <a class="nav-link" href="pagina_2.php">Pagina 2</a> </li>
+        <li class="nav-item"> <a class="nav-link" href="pagina_2.php">Servicios</a> </li>
             </ul>
           </div>
         </div>
@@ -67,7 +68,7 @@
                 <div class="col-md-8">
                   <div class="card-body">
                     <h5 class="card-title">Ofertas de empleo</h5>
-                    <p class="card-text">En este apartado encontraras las mejores páginas de referencia para encontrar ofertas laborales.
+                    <p class="card-text">En este apartado encontraras las mejores páginas de referencia en ofertas laborales.
                       <ul class="vinetas"> 
                         <li><a href="https://www.elempleo.com/co/ofertas-empleo?gclid=CjwKCAjw__ihBhADEiwAXEazJhUcTcZefkvTyeOCN-Ipzb7SO1pDRGdDjLb5s10hYm8K_B_GTFLmhRoCtVsQAvD_BwE">El empleo</a></li>
                         <li><a href="https://co.computrabajo.com/">Computrbajo</a></li>
@@ -140,7 +141,7 @@
     <tr>
       <td><?php echo $row["nombre"]; ?></td>
       <td><?php echo $row["genero"]; ?></td>
-      <td><?php echo $row["orienacion"]; ?></td>
+      <td><?php echo $row["orientacion"]; ?></td>
       <td><?php echo $row["telefono"]; ?></td>
       <td><form action="editarregistro.php" method="get"><input type="hidden" name="editar" value="<?php echo $row["id"]; ?>"><button type="submit" class="btn btn-warning">Editar</button> </form><form action="eliminar.php" method="get"><input type="hidden" name="eliminar" value="<?php echo $row["id"]; ?>"><button type="submit" class="btn btn-danger">Eliminar</button> </form></td>
     </tr>
@@ -173,16 +174,16 @@
         <h5>Enlaces rapidos</h5>
         <ul class="list-unstyled">
           <li class="mb-2"><a href="index.html">Inicio</a></li>
-          <li class="mb-2"><a href="#">Pagina 2</a></li>
+          <li class="mb-2"><a href="#">servicios</a></li>
         </ul>
       </div>
       <div class="col-lg-4 mb-3">
         <h5>Enlaces de interés</h5>
         <ul class="list-unstyled">
-          <li class="mb-2"><a href="#">Enlace de interés 1</a></li>
-          <li class="mb-2"><a href="#">Enlace de interés 2</a></li>
-          <li class="mb-2"><a href="#">Enlace de interés 3</a></li>
-          <li class="mb-2"><a href="#">Enlace de interés 4</a></li>
+        <li class="mb-2"><a href="#"></a></li>
+            <li class="mb-2"><a href="#">Agendamientos</a></li>
+            <li class="mb-2"><a href="#">Estado del proceso</a></li>
+            <li class="mb-2"><a href="#">Lista de opciones</li>
         </ul>
       </div>
     </div>
